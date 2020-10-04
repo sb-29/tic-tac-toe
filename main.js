@@ -11,6 +11,10 @@ $('table tr td').click(function(){
             $(this).css('color', '#e85a4f');
         }
         move++;
+        if(move>8)
+         {
+        alert('It is a tie!!');
+        }
         if(findWinner() != -1 && findWinner()!= ""){
             if(findWinner() == 'X'){
                 $('body').append('<div class="winner"><span>Winner</span>X</div>');
